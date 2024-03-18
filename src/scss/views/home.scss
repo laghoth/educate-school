@@ -1,0 +1,957 @@
+// .home {
+
+.slide {
+  display: grid;
+  grid-template-columns: 50% 46%;
+  justify-content: space-between;
+  padding: var(--xl-padding);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  @include forScreenSize(xxl) {
+    padding: var(--xl-padding);
+  }
+
+  @include forScreenSize(xl) {
+    padding: var(--xl-padding);
+  }
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    border-radius: 0;
+    justify-content: center;
+    z-index: 2;
+    padding-right: 50px;
+    h3 {
+      font-size: 50px;
+      text-transform: uppercase;
+      color: var(--main-color-blue-1);
+      font-family: $font-family-text3;
+    }
+    p {
+      font-size: 20px;
+      font-family: sans-serif;
+      color: var(--main-color-green-1);
+      line-height: 2;
+    }
+    .btn-crs-student {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      span {
+        text-align: start;
+        font-family: $font-family-text3;
+        font-size: 22px;
+        color: var(--main-color-blue-1);
+        line-height: 1;
+      }
+      .imgs-students {
+        display: flex;
+        padding-left: 10px;
+        img {
+          width: 36px;
+          border-radius: 50%;
+          margin-left: -15px;
+          border: 1px solid var(--main-color-blue-1);
+          padding: 1px;
+        }
+      }
+    }
+  }
+  .slide-image {
+    .image-student {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 440px;
+        height: 440px;
+        border: 100px solid var(--main-color-green-4);
+        border-radius: 50%;
+        // right: 0;
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        border: 60px solid var(--main-color-green-5);
+        border-radius: 50%;
+        // right: 100px;
+        z-index: -1;
+      }
+      img {
+        width: 80%;
+      }
+    }
+  }
+  @include forScreenSize(lg) {
+    grid-template-columns: 100%;
+    padding-top: 50px;
+    .slide-content {
+      .btn-crs-student {
+        justify-content: space-evenly;
+      }
+    }
+  }
+  @include forScreenSize(md) {
+    padding: 50px 50px 0;
+    .slide-image {
+      .image-student {
+        &::before {
+          width: 320px;
+          height: 320px;
+          border: 50px solid rgb(255 118 118 / 30%);
+        }
+        &::after {
+          width: 220px;
+          height: 220px;
+          border: 50px solid rgb(255 118 118 / 20%);
+        }
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+  @include forScreenSize(sm) {
+    padding: 50px 35px 0;
+    .slide-image {
+      .image-student {
+        &::before {
+          width: 240px;
+          height: 240px;
+          border: 30px solid rgb(255 118 118 / 30%);
+        }
+        &::after {
+          width: 200px;
+          height: 200px;
+          border: 20px solid rgb(255 118 118 / 20%);
+        }
+        img {
+          width: 80%;
+        }
+      }
+    }
+    .slide-content {
+      text-align: center;
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+// End Slider Styling
+
+// Start About Styling
+.about {
+  background-color: var(--main-color-blue-5);
+  display: grid;
+  grid-template-columns: 46% 50%;
+  gap: 70px;
+  padding: $default-padding;
+  position: relative;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .img-about {
+    height: 100%;
+    z-index: 1;
+    div {
+      height: 100%;
+    }
+    img {
+      @include widthHeight(100%, auto);
+    }
+  }
+  .content-about div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+
+    h3 {
+      font-weight: 700;
+    }
+    p {
+      color: var(--main-color-gray);
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        @include display-flex-column;
+        .color-nbr1,
+        .color-nbr2,
+        .color-nbr3 {
+          font-size: 36px;
+          font-weight: $font-weight-3;
+          color: var(--main-color-green-1);
+          font-family: $font-family-text2;
+        }
+        // .color-nbr1 {
+        //   color: var(--main-color-green-3);
+        // }
+        // .color-nbr2 {
+        //   font-family: $font-family-text2;
+        // }
+
+        // .color-nbr3 {
+        //   color: var(--main-color-yellow);
+        //   font-family: $font-family-text2;
+        // }
+        .text {
+          color: var(--main-color-gray);
+          font-family: $font-family-text3;
+          font-size: $font-size-2;
+        }
+      }
+    }
+    button {
+      padding: 10px 20px;
+      width: fit-content;
+      background-color: #164863;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+  @include forScreenSize(lg) {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+  @include forScreenSize(md) {
+    padding: $md-margin;
+  }
+
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+    ul {
+      flex-direction: column !important;
+    }
+  }
+}
+// End About Styling
+
+// Start Categories Styling
+.categories {
+  padding: $xl-margin;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .categories-content {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    padding: 30px 0;
+    gap: 30px;
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--main-color-blue-5);
+      border-radius: 15px;
+      padding: 80px 0;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 5px 0px var(--main-color-blue-4);
+      &:hover {
+        background-color: var(--main-color-blue-1);
+        .image-cat {
+          &::after {
+            border-color: var(--main-color-green-1);
+          }
+          &::before {
+            background-color: var(--main-color-green-1);
+          }
+        }
+        .category-name {
+          color: var(--main-white);
+        }
+        a {
+          color: var(--main-white);
+        }
+      }
+      .image-cat {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          position: relative;
+        }
+        &::after {
+          content: "";
+          width: 90px;
+          height: 90px;
+          position: absolute;
+          border: 1px dashed var(--main-color-green-2);
+          top: -20px;
+          left: -20px;
+          border-radius: 50%;
+        }
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          top: -15px;
+          left: -15px;
+          border-radius: 50%;
+          border: 1px solid var(--main-color-green-4);
+          background-color: var(--main-color-green-4);
+        }
+      }
+      .category-name {
+        margin-top: 20px;
+        font-weight: 900;
+        font-family: math;
+        font-size: 17px;
+        transition: all 0.3s ease-in-out;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: var(--main-color-gray);
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @include forScreenSize(lg) {
+    .categories-content {
+      grid-template-columns: 48% 48%;
+    }
+  }
+  @include forScreenSize(md) {
+    padding: $md-margin;
+  }
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+
+    .categories-content {
+      grid-template-columns: 100%;
+    }
+  }
+}
+// End Categories Styling
+
+// Start Call section Styling
+.call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-image: url(../../images/bg-call.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: $xl-margin;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .call-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    span,
+    h3,
+    a {
+      color: var(--main-white);
+      font-size: 30px;
+      font-family: $font-family-text2;
+      @include forScreenSize(sm) {
+        font-size: 25px;
+      }
+    }
+    h3,
+    a {
+      font-size: 40px;
+      text-decoration: none;
+      font-family: $font-family-text3;
+      @include forScreenSize(sm) {
+        font-size: 35px;
+      }
+    }
+    @include forScreenSize(md) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+  @include forScreenSize(md) {
+    padding: $sm-margin;
+  }
+}
+// End Call section Styling
+
+// Start Call section Styling
+.popular-courses {
+  padding: $xl-margin;
+  position: relative;
+  background-color: var(--main-color-blue-5);
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .courses-list {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 30px 0;
+    justify-content: space-between;
+    padding: 30px 0 0px;
+    .course-content {
+      padding: 25px 20px;
+      background-color: var(--main-white);
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      border: 0.5px solid #c0e5f4;
+      position: relative;
+      box-shadow: 0 0 5px 0px var(--main-color-blue-4);
+      .course-category {
+        color: var(--main-white);
+        position: absolute;
+        background-color: var(--main-color-green-1);
+        padding: 5px 20px;
+        top: 35px;
+        left: 10px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: math;
+        z-index: 2;
+        font-weight: 900;
+      }
+      .image-course {
+        overflow: hidden;
+        img {
+          width: 100%;
+          border-radius: 5px;
+          transition: all 1.5s ease;
+        }
+      }
+      .starts {
+        ul {
+          display: flex;
+          list-style: none;
+          gap: 5px;
+          color: var(--main-color-green-1);
+        }
+      }
+      .textes {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: sans-serif;
+        h3 {
+          a {
+            font-family: "Rubik";
+            color: var(--main-black);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover {
+              color: var(--main-color-blue-2);
+            }
+          }
+        }
+        ul {
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          color: var(--main-color-blue-1);
+          li {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 13px;
+            @include forScreenSize(sm) {
+              flex-direction: column;
+            }
+          }
+        }
+        .course-teacher {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 10%;
+            border-radius: 50%;
+          }
+          h4 {
+            font-family: "Courier New", Courier, monospace;
+            span {
+              color: var(--main-black-2);
+            }
+          }
+        }
+        .course-price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .price {
+            color: var(--main-black-2);
+            font-size: 25px;
+            font-weight: 900;
+            font-family: "Kanit";
+            transition: all 0.3s ease;
+            span {
+              color: var(--main-color-green-4);
+              padding-left: 6px;
+              font-weight: 600;
+              position: relative;
+              transition: all 0.3s ease;
+              &:after {
+                content: "";
+                position: absolute;
+                width: 110%;
+                border: 1px solid rgb(87, 87, 87);
+                left: 0;
+                top: 20px;
+                transform: translateY(15px);
+                transform: rotate(18deg);
+              }
+            }
+            &:hover {
+              color: #000000;
+
+              & span {
+                color: var(--main-color-green-1);
+              }
+            }
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            font-size: 15px;
+            align-items: end;
+            color: #000000ad;
+            svg {
+              font-size: 22px;
+            }
+            &:hover {
+              color: #000000;
+              transition: all 0.3s ease;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &:hover {
+        .image-course {
+          img {
+            transform: scale(1.1) rotate(3deg);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .more-courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  @include forScreenSize(lg) {
+    .courses-list {
+      grid-template-columns: 48% 48%;
+    }
+  }
+  @include forScreenSize(md) {
+    padding: $md-margin;
+    .courses-list {
+      gap: 30px 0px;
+      .course-content {
+        padding: 25px 10px;
+        .course-price {
+          .price {
+            font-size: 23px !important;
+          }
+        }
+      }
+    }
+  }
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+    .courses-list {
+      grid-template-columns: 100%;
+    }
+  }
+}
+// End About Styling
+
+// Start instructor section Styling
+.instructor {
+  position: relative;
+  padding: $xl-margin;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  @include forScreenSize(md) {
+    padding: $md-margin;
+  }
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+  }
+  .constructors-list {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px 0 0px;
+    @include forScreenSize(xl) {
+      grid-template-columns: 32% 32% 32%;
+    }
+    @include forScreenSize(lg) {
+      grid-template-columns: 48% 48%;
+    }
+    @include forScreenSize(md) {
+      grid-template-columns: 98%;
+    }
+    .constructor-item {
+      position: relative;
+      // border: 3px solid #164863;
+      border-radius: 10px;
+      transition: all 10s ease;
+      &:hover .constructor-image img {
+        transform: scale(1.1) rotate(-3deg);
+      }
+      .section-bg-opacity {
+        display: none;
+      }
+      &:hover .section-bg-opacity {
+        background-color: #1d828a38;
+        z-index: 1;
+        display: block;
+        border-radius: 10px;
+      }
+
+      .constructor-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        border-radius: 10px !important;
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 0.4s ease;
+        }
+      }
+      .share-links {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        z-index: 2;
+
+        button {
+          background-color: var(--main-color-green-2);
+          color: var(--main-white);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          svg {
+            font-size: 20px;
+          }
+        }
+        ul {
+          list-style: none;
+          background-color: var(--main-white);
+          border-radius: 4px;
+          position: relative;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          li {
+            padding: 5px 7px;
+            &:hover {
+              background-color: var(--main-color-blue-1);
+              transition: all 0.3s ease-out;
+            }
+            &:hover svg {
+              color: var(--main-white);
+            }
+          }
+          a {
+            svg {
+              font-size: 25px;
+              color: var(--main-color-blue-1);
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            border-width: 12px;
+            border-color: transparent transparent var(--main-white);
+            border-style: solid;
+          }
+        }
+        &:hover button {
+          background-color: var(--main-color-green-1);
+          transition: all 0.3s ease-out;
+        }
+        &:hover ul {
+          display: flex;
+          animation: growOut 0.5s ease-in-out forwards;
+        }
+      }
+      .constructor-texte {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--main-white);
+        width: calc(100% - 60px);
+        padding: 10px 20px;
+        margin: 10px;
+        color: var(--main-color-blue-1);
+        font-family: sans-serif;
+        border-radius: 10px;
+        transition: all 1s ease;
+        z-index: 2;
+
+        &:hover {
+          background-color: var(--main-color-blue-1);
+          color: var(--main-white);
+        }
+        .open-link {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          svg {
+            z-index: 1;
+            font-size: 32px;
+            color: var(--main-color-green-1);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #ddf2fd;
+            right: -30%;
+            z-index: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// End instructor section Styling
+
+// Start funfact funfact Styling
+.funfact {
+  padding: $xl-margin;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .funfact-bg {
+    background-image: url(../../images/bg-funfact.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .funfact-items {
+      display: grid;
+      grid-template-columns: 24% 24% 24% 24%;
+      justify-content: space-between;
+      gap: 20px 0;
+      z-index: 1;
+      position: relative;
+      padding: 50px 20px;
+      .funfact-item {
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        transition: all 0.3s ease;
+        .funfact-img {
+          width: 50px;
+          background-color: var(--main-white);
+          padding: 20px;
+          transition: all 0.5s ease;
+          img {
+            width: 100%;
+          }
+        }
+        .funfact-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          color: var(--main-white);
+
+          transition: all 0.5s ease;
+          h3 {
+            font-size: 38px;
+            font-family: $font-family-text2;
+          }
+        }
+        &:hover .funfact-img {
+          background-color: var(--main-color-green-4);
+        }
+        &:hover .funfact-text {
+          color: var(--main-color-green-4);
+        }
+      }
+      @include forScreenSize(lg) {
+        grid-template-columns: 50% 50%;
+      }
+      @include forScreenSize(sm) {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+  @include forScreenSize(md) {
+    padding: $md-margin;
+  }
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+  }
+}
+// End funfact section Styling
+
+// Start news section Styling
+.news-lettre {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-family-nav;
+  padding: $xl-margin;
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .section-bg-opacity {
+    background-color: #ddf2fdb0;
+  }
+  .news-texte {
+    z-index: 1;
+    width: 100%;
+    color: var(--main-color-blue-2);
+    h3 {
+      font-size: 30px;
+      font-family: $font-family-text2;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 20px;
+      font-family: $font-family-text3;
+    }
+  }
+  .news-form {
+    z-index: 1;
+    form {
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 10px;
+      height: 40px;
+      box-shadow: 0 0 5px 0 var(--main-color-blue-1);
+      input {
+        border: none;
+        height: calc(100% - 10px);
+        padding: 5px 50px 5px 5px;
+        &::placeholder {
+          font-weight: 900;
+          color: var(--main-color-blue-2);
+          transition: all 0.3s ease;
+        }
+        &:focus {
+          border: 2px solid red !important;
+        }
+      }
+      button {
+        border: none;
+        height: 100%;
+        padding: 0 20px;
+        background-color: var(--main-color-blue-2);
+        color: white;
+        font-weight: 900;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        button {
+          background-color: var(--main-color-blue-1);
+        }
+        input::placeholder {
+          color: var(--main-color-blue-1);
+        }
+      }
+    }
+  }
+  @include forScreenSize(lg) {
+    padding: $md-margin;
+    grid-template-columns: 100%;
+    text-align: center;
+    gap: 20px;
+    justify-items: center;
+    .news-form {
+      width: fit-content;
+    }
+  }
+  @include forScreenSize(sm) {
+    padding: $sm-margin;
+  }
+}
+// End news section Styling
+//}

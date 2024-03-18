@@ -1,0 +1,123 @@
+footer {
+  border: 0.5px solid var(--main-color-blue-1);
+  display: grid;
+  grid-template-columns: 30% 20% 20% 20%;
+  gap: 30px;
+  padding: 50px 100px;
+  justify-content: space-between;
+  background-color: var(--main-color-blue-1);
+  @include forScreenSize(full) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .logo {
+      img {
+        width: 60%;
+      }
+    }
+    p {
+      color: var(--main-white);
+      font-weight: 700;
+    }
+    ul {
+      display: flex;
+      justify-content: start;
+      gap: 20px;
+      list-style: none;
+      li {
+        svg {
+          color: var(--main-color-green-1);
+          font-size: 22px;
+          border: 0.5px solid var(--main-color-green-1);
+          padding: 7px;
+          border-radius: 50%;
+        }
+        &:hover {
+          svg {
+            transition: all 0.3s ease;
+            background-color: var(--main-color-green-1);
+            border-color: transparent;
+            color: var(--main-white);
+          }
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 25px;
+    color: var(--main-color-blue-5);
+    font-family: sans-serif;
+  }
+
+  .quick-links,
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      li {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        svg {
+          color: var(--main-color-green-1);
+        }
+        a {
+          text-decoration: none;
+          color: var(--main-white);
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .list-img {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      gap: 10px;
+      img {
+        width: 80px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@include forScreenSize(lg) {
+  footer {
+    grid-template-columns: auto auto;
+  }
+}
+@include forScreenSize(md) {
+  footer {
+    padding: $md-margin;
+  }
+}
+
+@include forScreenSize(sm) {
+  footer {
+    grid-template-columns: auto;
+    text-align: center;
+    justify-items: center;
+    .description {
+      ul {
+        justify-content: center;
+      }
+    }
+    h3 {
+      border-top: 2px solid var(--main-color-blue-5);
+      border-bottom: 2px solid var(--main-color-blue-5);
+      padding: 5px 20px;
+    }
+  }
+}

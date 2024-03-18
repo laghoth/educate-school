@@ -1,0 +1,40 @@
+$sm-screen-width: 576px;
+$md-screen-width: 768px;
+$lg-screen-width: 1024px;
+$xl-screen-width: 1200px;
+$xxl-screen-width: 1536px;
+$full-screen-width: 1636px;
+
+@mixin forScreenSize($deviceType) {
+  @if $deviceType == sm {
+    @media (max-width: $sm-screen-width) {
+      @content;
+    }
+  }
+  @if $deviceType == md {
+    @media (max-width: $md-screen-width) {
+      @content;
+    }
+  }
+  @if $deviceType == lg {
+    @media (max-width: $lg-screen-width) {
+      @content;
+    }
+  }
+
+  @if $deviceType == xl {
+    @media (max-width: $xl-screen-width) {
+      @content;
+    }
+  }
+  @if $deviceType == xxl {
+    @media (max-width: $xxl-screen-width) {
+      @content;
+    }
+  }
+  @if $deviceType == full {
+    @media (min-width: $full-screen-width) {
+      @content;
+    }
+  }
+}

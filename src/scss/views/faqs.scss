@@ -1,0 +1,92 @@
+.page-faqs {
+  font-family: var(--font-family-nav);
+  .faq-liste {
+    padding: var(--xl-padding);
+    @include forScreenSize(full) {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+
+    @include forScreenSize(lg) {
+      border: solid red;
+    }
+
+    @include forScreenSize(md) {
+      border: solid rgb(200, 0, 255);
+      padding: var(--md-padding);
+    }
+
+    @include forScreenSize(sm) {
+      border: solid rgb(0, 255, 89);
+      padding: var(--sm-padding);
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    .accordion {
+      background-color: var(--main-color-green-2);
+      border-radius: 10px 10px 0 0;
+      padding: 20px;
+      border: 0.5px solid transparent;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--main-color-blue-1);
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      &:hover {
+        background-color: var(--main-color-green-3);
+        transition: ease 0.3s all;
+      }
+      &:after {
+        content: "\002B";
+        color: var(--main-color-blue-1);
+        font-weight: 900;
+        font-size: 25px;
+        float: right;
+        margin-left: 5px;
+      }
+    }
+    .active:after {
+      content: "\2212";
+      transition: ease 0.3s all;
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      margin-bottom: 40px;
+      .panel-content {
+        display: grid;
+        grid-template-columns: 70% 20%;
+        justify-content: space-around;
+        align-items: center;
+        @include forScreenSize(xl) {
+          grid-template-columns: 100%;
+        }
+        p {
+          font-size: 20px;
+          color: var(--main-color-gray-2);
+          padding: 10px;
+          text-align: justify;
+        }
+        img {
+          width: 80%;
+          padding: 10px;
+          border-radius: 20px;
+          @include forScreenSize(xl) {
+            display: none;
+          }
+        }
+      }
+    }
+    .panel-active {
+      max-height: 500px;
+      transition: max-height 0.5s ease-out;
+      border: solid 0.5px var(--main-color-green-2);
+      border-top: none;
+    }
+  }
+}

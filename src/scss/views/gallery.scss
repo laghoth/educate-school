@@ -1,0 +1,84 @@
+.gallery-page {
+  font-family: var(--font-family-nav);
+
+  .content-page-gallery {
+    padding: var(--xl-padding);
+    @include forScreenSize(full) {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    @include forScreenSize(md) {
+      padding: var(--md-padding);
+    }
+    @include forScreenSize(sm) {
+      padding: var(--sm-padding);
+    }
+    .category-links {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 10px;
+        li {
+          padding: 20px 30px;
+          border-radius: 40px 40px 40px 40px;
+          background-color: var(--main-color-green-2);
+          color: var(--main-white);
+          font-weight: 700;
+          box-shadow: 0 0 10px 0px var(--main-color-blue-3);
+          transition: ease 0.3s all;
+          &:hover {
+            background-color: var(--main-color-blue-1);
+            color: var(--main-color-blue-5);
+            box-shadow: 0 0 10px 0px var(--main-color-blue-1);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .main-border-double {
+      border-color: var(--main-color-green-1);
+      margin-top: 40px;
+    }
+    .categories-content {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 22% 22% 22% 22%;
+      justify-content: space-between;
+      row-gap: 40px;
+
+      @include forScreenSize(lg) {
+        grid-template-columns: 30% 30% 30%;
+      }
+      @include forScreenSize(md) {
+        grid-template-columns: 48% 48%;
+      }
+      @include forScreenSize(sm) {
+        grid-template-columns: 100%;
+      }
+      .category-part {
+        .grid-image {
+          width: calc(100% - 20px);
+          padding: 10px;
+          background-color: var(--main-color-blue-5);
+          border-radius: 10px;
+          border: 2px dotted var(--main-color-green-1);
+          overflow: hidden;
+          transition: ease 0.6s all;
+          img {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: ease 0.6s all;
+          }
+          &:hover img {
+            transform: scale(1.2) rotate(3deg);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

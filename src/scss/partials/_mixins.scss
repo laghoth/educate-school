@@ -1,0 +1,54 @@
+@mixin display-flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin display-flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button(
+  $background-color,
+  $background-hover,
+  $txt-color,
+  $txt-color-hover
+) {
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: $txt-color;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Rubik";
+  transition: all 0.3s ease;
+  text-decoration: none;
+  svg {
+    font-size: 24px;
+  }
+  &:hover {
+    background-color: $background-hover;
+    color: $txt-color-hover;
+    a {
+      color: $txt-color-hover;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $txt-color;
+  }
+}

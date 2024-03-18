@@ -1,0 +1,52 @@
+@keyframes growOut {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growOut2 {
+  0% {
+    // transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    // transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveit {
+  from {
+    top: 0px;
+  }
+  25% {
+    top: 80px;
+  }
+  50% {
+    top: 40px;
+  }
+  75% {
+    top: 80px;
+  }
+  to {
+    top: 0px;
+  }
+}

@@ -1,0 +1,222 @@
+// Style partials files scss
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakPoint";
+@import "./partials/animation";
+
+// Style Components
+@import "./components/header.scss";
+@import "./components/footer.scss";
+
+//Style Views
+@import "./views/home.scss";
+@import "./views/about.scss";
+@import "./views/contact.scss";
+@import "./views/sign.scss";
+@import "./views/error404.scss";
+@import "./views/gallery.scss";
+@import "./views/faqs.scss";
+.main-btn {
+  @include button(
+    var(--main-color-blue-1),
+    var(--main-color-blue-6),
+    var(--main-color-blue-6),
+    var(--main-color-blue-1)
+  );
+}
+
+.main-btn-2 {
+  @include button(
+    var(--main-color-blue-6),
+    var(--main-color-blue-1),
+    var(--main-color-blue-1),
+    var(--main-color-blue-6)
+  );
+}
+
+.title-section {
+  background-color: var(--main-color-blue-6);
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: var(--main-color-blue-2);
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  &.bg-wt {
+    background-color: var(--main-white) !important;
+  }
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border: 2px solid var(--main-color-green-1);
+    top: calc(50% - 4px);
+    transform: rotate(45deg);
+    right: -6px;
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border: 2px solid var(--main-color-blue-1);
+    top: calc(50% - 4px);
+    transform: rotate(45deg);
+    right: -12px;
+    border-radius: 50%;
+  }
+  @include forScreenSize(lg) {
+    display: inline;
+  }
+}
+
+.desc-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: $font-family-nav;
+    color: var(--main-color-blue-1);
+    &::before {
+      content: "";
+      width: 10px;
+      position: absolute;
+      height: 10px;
+      border: 2px solid var(--main-color-green-2);
+      top: calc(50% - 5px);
+      transform: rotate(45deg);
+      left: -20px;
+    }
+    &::after {
+      content: "";
+      width: 10px;
+      position: absolute;
+      height: 10px;
+      border: 2px solid var(--main-color-blue-1);
+      top: calc(50% - 5px);
+      transform: rotate(45deg);
+      left: -30px;
+    }
+  }
+
+  @include forScreenSize(lg) {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  @include forScreenSize(sm) {
+    h2 {
+      font-size: 22px;
+    }
+  }
+}
+
+.section-bg-opacity {
+  background-color: hsla(201, 64%, 24%, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.icon-animt-rotate {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  animation: rotate-animation 5s infinite linear;
+}
+.icon-animt-moveit {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  animation: moveit 5s infinite linear;
+}
+.main-border-dotted {
+  border-bottom: 2px dotted var(--main-color-blue-1);
+  margin: 10px 0;
+}
+.main-border-double {
+  border-bottom: 3px double var(--main-color-blue-1);
+  margin: 10px 0;
+}
+
+.main-educate-form {
+  .inpt-row {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    label {
+      font-size: 20px;
+      // font-weight: 700;
+      color: var(--main-color-blue-1);
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      padding: 10px;
+      height: 25px;
+      border-radius: 5px;
+      border: none;
+      // background-color: var(--main-color-green-5);
+      color: var(--main-color-blue-1);
+      outline-style: none;
+      font-weight: 700;
+      font-family: var(--font-family-nav);
+      border-radius: 0;
+      border-bottom: solid 1px var(--main-color-green-1);
+      transition: all 0.3s ease;
+      &::placeholder {
+        color: var(--main-color-green-1);
+        font-weight: 700;
+
+        transition: all 0.3s ease;
+      }
+      &:hover::placeholder {
+        font-size: 16px;
+        padding-left: 5px;
+      }
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      background-color: var(--main-color-green-1);
+      color: var(--main-white);
+      &:hover {
+        background-color: var(--main-color-blue-1);
+      }
+    }
+  }
+
+  .chk-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400 !important;
+    font-size: 15px;
+    color: var(--main-color-blue-1);
+    label {
+      align-items: center;
+      display: flex;
+      gap: 5px;
+      font-size: 15px;
+      margin: 0;
+      font-weight: 400;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
