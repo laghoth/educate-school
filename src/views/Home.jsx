@@ -33,10 +33,10 @@ function Home() {
               Happy <br /> Students
             </span>
             <div className="imgs-students">
-              <img src="/Images/students/student1.jpg" />
-              <img src="/Images/students/student2.jpg" />
-              <img src="/Images/students/student3.jpg" />
-              <img src="/Images/students/student4.jpg" />
+              <img src="/images/students/student1.jpg" />
+              <img src="/images/students/student2.jpg" />
+              <img src="/images/students/student3.jpg" />
+              <img src="/images/students/student4.jpg" />
             </div>
           </div>
         </div>
