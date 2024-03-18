@@ -111,12 +111,10 @@
         &::before {
           width: 320px;
           height: 320px;
-          border: 50px solid rgb(255 118 118 / 30%);
         }
         &::after {
           width: 220px;
           height: 220px;
-          border: 50px solid rgb(255 118 118 / 20%);
         }
         img {
           width: 80%;
@@ -131,12 +129,10 @@
         &::before {
           width: 240px;
           height: 240px;
-          border: 30px solid rgb(255 118 118 / 30%);
         }
         &::after {
           width: 200px;
           height: 200px;
-          border: 20px solid rgb(255 118 118 / 20%);
         }
         img {
           width: 80%;
@@ -145,8 +141,9 @@
     }
     .slide-content {
       text-align: center;
+      z-index: 0;
       h3 {
-        font-size: 30px;
+        // font-size: 30px;
       }
       p {
         font-size: 16px;

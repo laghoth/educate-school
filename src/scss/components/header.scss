@@ -224,13 +224,13 @@ header {
         bottom: 0;
         background: var(--main-color-blue-1);
         transform: translateY(100%);
-        z-index: 1;
         right: 0;
         flex-direction: column;
         transform: translate(110%, 100%);
         padding: 10px 15px;
         transition: all 0.3s ease-in;
         opacity: 0;
+        z-index: 2;
         ul {
           flex-direction: column;
           li a {
