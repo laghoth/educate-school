@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import { FaStop } from "react-icons/fa";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import Accordion from "react-bootstrap/Accordion";
 
 function Faqs() {
   useEffect(() => {
