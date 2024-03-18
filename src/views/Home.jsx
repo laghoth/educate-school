@@ -42,7 +42,7 @@ function Home() {
         </div>
         <div className="slide-image">
           <div className="image-student">
-            <img src="/Images/slider.png" alt="" />
+            <img src="/images/slider.png" alt="" />
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ function Home() {
 
         <div className="img-about">
           <div>
-            <img src="/Images/about-img.jpg" />
+            <img src="images/about-img.jpg" />
           </div>
         </div>
         <div className="content-about">
@@ -119,7 +119,7 @@ function Home() {
         <div className="categories-content">
           <div className="category">
             <div className="image-cat">
-              <img src="/Images/categories/graphic-designer.png" />
+              <img src="/images/categories/graphic-designer.png" />
             </div>
             <span className="category-name">Web Design</span>
             <a href="">
@@ -129,7 +129,7 @@ function Home() {
 
           <div className="category">
             <div className="image-cat">
-              <img src="/Images/categories/coding.png" />
+              <img src="/images/categories/coding.png" />
             </div>
             <span className="category-name">Personal Development</span>
             <a href="">

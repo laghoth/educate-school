@@ -1,7 +1,7 @@
 const Menu = [
   {
     id: 1,
-    image: "/Images/students/student1.jpg",
+    image: "/images/students/student1.jpg",
     name: "name 1",
     category: "cat1",
     price: "123",
@@ -10,7 +10,7 @@ const Menu = [
   },
   {
     id: 2,
-    image: "/Images/students/student2.jpg",
+    image: "/images/students/student2.jpg",
     name: "name 1",
     category: "cat2",
     price: "123",
@@ -19,7 +19,7 @@ const Menu = [
   },
   {
     id: 3,
-    image: "/Images/students/student3.jpg",
+    image: "/images/students/student3.jpg",
     name: "name 1",
     category: "cat3",
     price: "123",
@@ -28,7 +28,7 @@ const Menu = [
   },
   {
     id: 4,
-    image: "/Images/students/student4.jpg",
+    image: "/images/students/student4.jpg",
     name: "name 1",
     category: "cat1",
     price: "123",
@@ -37,7 +37,7 @@ const Menu = [
   },
   {
     id: 5,
-    image: "/Images/students/student1.jpg",
+    image: "/images/students/student1.jpg",
     name: "name 1",
     category: "cat2",
     price: "123",
@@ -46,7 +46,7 @@ const Menu = [
   },
   {
     id: 6,
-    image: "/Images/students/student2.jpg",
+    image: "/images/students/student2.jpg",
     name: "name 1",
     category: "cat3",
     price: "123",
@@ -55,7 +55,7 @@ const Menu = [
   },
   {
     id: 7,
-    image: "/Images/students/student3.jpg",
+    image: "/images/students/student3.jpg",
     name: "name 7",
     category: "cat4",
     price: "123",
@@ -64,7 +64,7 @@ const Menu = [
   },
   {
     id: 8,
-    image: "/Images/students/student4.jpg",
+    image: "/images/students/student4.jpg",
     name: "name 7",
     category: "cat4",
     price: "123",
