@@ -933,13 +933,11 @@
         border: none;
         height: calc(100% - 10px);
         padding: 5px 50px 5px 5px;
+        outline-style: none;
         &::placeholder {
           font-weight: 900;
           color: var(--main-color-blue-2);
           transition: all 0.3s ease;
-        }
-        &:focus {
-          border: 2px solid red !important;
         }
       }
       button {
