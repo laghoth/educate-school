@@ -60,7 +60,6 @@ function Cours() {
                         type="checkbox"
                         name="option1"
                         value="something"
-                        checked
                       />
                       React Js Learning
                     </label>
