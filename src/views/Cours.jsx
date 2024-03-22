@@ -12,6 +12,7 @@ import {
   FaFileInvoice,
   FaAnglesLeft,
   FaAnglesRight,
+  FaMagnifyingGlass,
 } from "react-icons/fa6";
 
 function Cours() {
@@ -30,413 +31,490 @@ function Cours() {
             <h2>Histudy Course Student Can Join With Us.</h2>
           </div>
 
-          <div className="courses-list">
-            <div className="course-content">
-              <div className="course-category">
-                <span>Development</span>
+          <div className="cours-categories-section">
+            <div className="categories-section">
+              <div className="search-part part-bd">
+                <h2>Search Cource</h2>
+                <form action="#">
+                  <div className="form-control">
+                    <input
+                      type="text"
+                      class="form-control-input"
+                      placeholder="Search"
+                    />
+                    <button type="submit">
+                      <FaMagnifyingGlass />
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_dev.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
+              <div className="category-part part-bd">
+                <h2>Course Category</h2>
+                <div class="form-check"></div>
+
                 <ul>
                   <li>
-                    <FaStar />
+                    <label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />{" "}
+                      React Js Learning
+                    </label>
                   </li>
+
                   <li>
-                    <FaStar />
+                    <label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />{" "}
+                      Graphic Design
+                    </label>
                   </li>
+
                   <li>
-                    <FaStar />
+                    <label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />{" "}
+                      Development
+                    </label>
                   </li>
+
                   <li>
-                    <FaStar />
+                    <label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Web Design
+                    </label>
                   </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
                 </ul>
               </div>
-              <div className="textes">
-                <h3>
+              <div className="price-part part-bd">
+                <h2>Cours Price</h2>
+              </div>
+            </div>
+
+            <div className="courses-list cours-section">
+              <div className="course-content">
+                <div className="course-category">
+                  <span>Development</span>
+                </div>
+                <div className="image-course">
                   <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
+                    <img src="/images/class_dev.jpg" />
                   </Link>
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
                 </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="course-content">
-              <div className="course-category">
-                <span>Graphic Design</span>
-              </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_eco.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
-                <ul>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
-                </ul>
-              </div>
-              <div className="textes">
-                <h3>
-                  <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
-                  </Link>{" "}
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
-                </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
                 </div>
               </div>
-            </div>
 
-            <div className="course-content">
-              <div className="course-category">
-                <span>Development</span>
-              </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_children.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
-                <ul>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
-                </ul>
-              </div>
-
-              <div className="textes">
-                <h3>
+              <div className="course-content">
+                <div className="course-category">
+                  <span>Graphic Design</span>
+                </div>
+                <div className="image-course">
                   <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
+                    <img src="/images/class_eco.jpg" />
                   </Link>
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
                 </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>{" "}
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="course-content">
-              <div className="course-category">
-                <span>Development</span>
-              </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_dev.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
-                <ul>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
-                </ul>
-              </div>
-              <div className="textes">
-                <h3>
+              <div className="course-content">
+                <div className="course-category">
+                  <span>Web Design</span>
+                </div>
+                <div className="image-course">
                   <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
+                    <img src="/images/class_children.jpg" />
                   </Link>
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
                 </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="course-content">
-              <div className="course-category">
-                <span>Development</span>
-              </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_eco.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
-                <ul>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
-                </ul>
-              </div>
-              <div className="textes">
-                <h3>
-                  <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
-                  </Link>{" "}
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
-                </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
                 </div>
               </div>
-            </div>
 
-            <div className="course-content">
-              <div className="course-category">
-                <span>Development</span>
-              </div>
-              <div className="image-course">
-                <Link to={"#"}>
-                  <img src="/images/class_children.jpg" />
-                </Link>
-              </div>
-              <div className="starts">
-                <ul>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaStar />
-                  </li>
-                  <li>
-                    <FaRegStar />
-                  </li>
-                  <li>(4.7)</li>
-                </ul>
-              </div>
-
-              <div className="textes">
-                <h3>
+              <div className="course-content">
+                <div className="course-category">
+                  <span>React Js Learning</span>
+                </div>
+                <div className="image-course">
                   <Link to={"#"}>
-                    It Statistics Data Science And Business Analysis
+                    <img src="/images/class_dev.jpg" />
                   </Link>
-                </h3>
-                <ul>
-                  <li>
-                    <FaRegClock />
-                    10h 30min
-                  </li>
-                  <li>
-                    <FaRegCircleUser />
-                    Students 50+
-                  </li>
-                  <li>
-                    <FaFileInvoice />
-                    Lesson 11
-                  </li>
-                </ul>
-                <div className="main-border-dotted"></div>
-                <div className="course-teacher">
-                  <img src="/Images/students/student2.jpg" />
-                  <h4>
-                    By <span>Othmane</span> in <span>Development</span>
-                  </h4>
                 </div>
-                <div className="course-price">
-                  <div className="price">
-                    $60<span>$50</span>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
                   </div>
-                  <button className="add-to-cart">
-                    <FaCartShopping />
-                    Add To Cart
-                  </button>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="course-content">
+                <div className="course-category">
+                  <span>Php Programming</span>
+                </div>
+                <div className="image-course">
+                  <Link to={"#"}>
+                    <img src="/images/class_eco.jpg" />
+                  </Link>
+                </div>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>{" "}
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
+                  </div>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="course-content">
+                <div className="course-category">
+                  <span>Full Stack Developer</span>
+                </div>
+                <div className="image-course">
+                  <Link to={"#"}>
+                    <img src="/images/class_children.jpg" />
+                  </Link>
+                </div>
+                <div className="starts">
+                  <ul>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaStar />
+                    </li>
+                    <li>
+                      <FaRegStar />
+                    </li>
+                    <li>(4.7)</li>
+                  </ul>
+                </div>
+
+                <div className="textes">
+                  <h3>
+                    <Link to={"#"}>
+                      It Statistics Data Science And Business Analysis
+                    </Link>
+                  </h3>
+                  <ul>
+                    <li>
+                      <FaRegClock />
+                      10h 30min
+                    </li>
+                    <li>
+                      <FaRegCircleUser />
+                      Students 50+
+                    </li>
+                    <li>
+                      <FaFileInvoice />
+                      Lesson 11
+                    </li>
+                  </ul>
+                  <div className="main-border-dotted"></div>
+                  <div className="course-teacher">
+                    <img src="/Images/students/student2.jpg" />
+                    <h4>
+                      By <span>Othmane</span> in <span>Development</span>
+                    </h4>
+                  </div>
+                  <div className="course-price">
+                    <div className="price">
+                      $60<span>$50</span>
+                    </div>
+                    <button className="add-to-cart">
+                      <FaCartShopping />
+                      Add To Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

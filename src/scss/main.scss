@@ -18,6 +18,7 @@
 @import "./views/error404.scss";
 @import "./views/gallery.scss";
 @import "./views/faqs.scss";
+@import "./views/cours.scss";
 .main-btn {
   @include button(
     var(--main-color-blue-1),

@@ -1,0 +1,69 @@
+.page-cours {
+  .cours-categories-section {
+    display: grid;
+    grid-template-columns: 22% 74%;
+    justify-content: space-between;
+    font-family: var(--font-family-nav);
+    font-size: 14px;
+    .categories-section {
+      padding-top: 30px;
+      .part-bd {
+        border: 0.5px solid var(--main-color-blue-4);
+        padding: 10px;
+        margin-bottom: 20px;
+        h2 {
+          color: var(--main-color-blue-1);
+          position: relative;
+          padding-bottom: 5px;
+          &::after {
+            content: "";
+            width: 50px;
+            position: absolute;
+            border-bottom: 2px solid var(--main-color-green-1);
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      .search-part {
+        form {
+          margin-top: 20px;
+          .form-control {
+            border: solid 2px var(--main-color-green-3);
+            display: flex;
+            flex-direction: row;
+            .form-control-input {
+              width: 80%;
+              padding: 10px 0 10px 10px;
+              background: none;
+              border: none;
+              outline: none;
+            }
+            button {
+              width: 20%;
+              background: var(--main-color-green-3);
+              border: none;
+              cursor: pointer;
+              svg {
+                color: var(--main-white);
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .category-part {
+        ul {
+          list-style: none;
+
+          li {
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .cours-section {
+      grid-template-columns: 48% 48%;
+    }
+  }
+}
