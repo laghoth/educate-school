@@ -142,9 +142,7 @@
     .slide-content {
       text-align: center;
       z-index: 0;
-      h3 {
-        // font-size: 30px;
-      }
+
       p {
         font-size: 16px;
         line-height: 1.5;
@@ -203,17 +201,7 @@
           color: var(--main-color-green-1);
           font-family: $font-family-text2;
         }
-        // .color-nbr1 {
-        //   color: var(--main-color-green-3);
-        // }
-        // .color-nbr2 {
-        //   font-family: $font-family-text2;
-        // }
 
-        // .color-nbr3 {
-        //   color: var(--main-color-yellow);
-        //   font-family: $font-family-text2;
-        // }
         .text {
           color: var(--main-color-gray);
           font-family: $font-family-text3;

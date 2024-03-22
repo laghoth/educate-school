@@ -39,7 +39,7 @@ function Cours() {
                   <div className="form-control">
                     <input
                       type="text"
-                      class="form-control-input"
+                      className="form-control-input"
                       placeholder="Search"
                     />
                     <button type="submit">
@@ -50,17 +50,18 @@ function Cours() {
               </div>
               <div className="category-part part-bd">
                 <h2>Course Category</h2>
-                <div class="form-check"></div>
+                <div className="form-check"></div>
 
                 <ul>
                   <li>
                     <label>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         name="option1"
                         value="something"
-                      />{" "}
+                        checked
+                      />
                       React Js Learning
                     </label>
                   </li>
@@ -68,11 +69,11 @@ function Cours() {
                   <li>
                     <label>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         name="option1"
                         value="something"
-                      />{" "}
+                      />
                       Graphic Design
                     </label>
                   </li>
@@ -80,11 +81,11 @@ function Cours() {
                   <li>
                     <label>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         name="option1"
                         value="something"
-                      />{" "}
+                      />
                       Development
                     </label>
                   </li>
@@ -92,7 +93,7 @@ function Cours() {
                   <li>
                     <label>
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         name="option1"
                         value="something"
