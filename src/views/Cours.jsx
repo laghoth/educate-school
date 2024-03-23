@@ -48,6 +48,7 @@ function Cours() {
                   </div>
                 </form>
               </div>
+
               <div className="category-part part-bd">
                 <h2>Course Category</h2>
                 <div className="form-check"></div>
@@ -63,6 +64,7 @@ function Cours() {
                       />
                       React Js Learning
                     </label>
+                    <span>09</span>
                   </li>
 
                   <li>
@@ -75,6 +77,7 @@ function Cours() {
                       />
                       Graphic Design
                     </label>
+                    <span>19</span>
                   </li>
 
                   <li>
@@ -87,6 +90,7 @@ function Cours() {
                       />
                       Development
                     </label>
+                    <span>12</span>
                   </li>
 
                   <li>
@@ -99,11 +103,92 @@ function Cours() {
                       />
                       Web Design
                     </label>
+                    <span>10</span>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Php Programming
+                    </label>
+                    <span>06</span>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Full Stack Developer
+                    </label>
+                    <span>23</span>
                   </li>
                 </ul>
               </div>
+
               <div className="price-part part-bd">
                 <h2>Cours Price</h2>
+                <ul>
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      All
+                    </label>
+                    <span>79</span>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Paid
+                    </label>
+                    <span>38</span>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Free
+                    </label>
+                    <span>23</span>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        name="option1"
+                        value="something"
+                      />
+                      Scholarship
+                    </label>
+                    <span>18</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
