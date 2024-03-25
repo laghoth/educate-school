@@ -8,6 +8,16 @@
       padding-left: 250px;
       padding-right: 250px;
     }
+    @include forScreenSize(lg) {
+      grid-template-columns: 100%;
+    }
+    @include forScreenSize(md) {
+      padding: var(--md-padding);
+    }
+
+    @include forScreenSize(sm) {
+      padding: var(--sm-padding);
+    }
     .image-signin {
       background-image: url(../../../public/images/signin.jpg);
       background-size: cover;
@@ -22,7 +32,13 @@
     }
     .sign-form {
       background-color: var(--main-color-blue-5);
-      padding: 50px 100px;
+      padding: 50px 80px;
+      @include forScreenSize(md) {
+        padding: 50px 40px;
+      }
+      @include forScreenSize(sm) {
+        padding: 50px 20px;
+      }
       .inpt-row {
         button {
           justify-content: center;
@@ -46,6 +62,9 @@
           grid-template-columns: 1fr 1fr;
           justify-content: center;
           gap: 15px;
+          @include forScreenSize(sm) {
+            grid-template-columns: 1fr;
+          }
           button {
             padding: 5px 10px;
             border-radius: 2px;

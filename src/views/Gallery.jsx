@@ -29,14 +29,15 @@ function Gallery() {
       <div className="content-page-gallery">
         <div className="category-links">
           <ul>
+            {" "}
+            <li onClick={() => filtreItem("all")}>
+              <span>All</span>
+            </li>
             <li onClick={() => filtreItem("cat1")}>
               <span>category 1</span>
             </li>
             <li onClick={() => filtreItem("cat2")}>
               <span>category 2</span>
-            </li>
-            <li onClick={() => filtreItem("all")}>
-              <span>All</span>
             </li>
             <li onClick={() => filtreItem("cat3")}>
               <span>category 3</span>
