@@ -99,6 +99,23 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      <div className="news-lettre">
+        <div className="news-texte">
+          <h3>Join Our Newsletter</h3>
+          <p>Subscribe our newsletter to get our latest update & news.</p>
+        </div>
+        <div className="news-form">
+          <form action="">
+            <div className="news-email">
+              <input type="text" placeholder="Enter your email:" />
+            </div>
+            <div className="btn-send">
+              <button>Subscribe Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
