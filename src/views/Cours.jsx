@@ -214,7 +214,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
@@ -265,7 +265,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
@@ -316,7 +316,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
@@ -367,7 +367,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
@@ -418,7 +418,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
@@ -469,7 +469,7 @@ function Cours() {
                   </Link>
                   <div className="teacher-price">
                     <div className="course-teacher">
-                      <img src="/Images/students/student2.jpg" />
+                      <img src="/images/students/student2.jpg" />
                       <h4>
                         Othmane Lag <br /> <span>12 Courses</span>
                       </h4>
