@@ -199,6 +199,86 @@ function Cours() {
                   <Link to="/">REACT</Link>
                   <Link to="/">JS</Link>
                   <Link to="/">SASS</Link>
+                  <Link to="/">JAVA</Link>
+                  <Link to="/">LARAVEL</Link>
+                  <Link to="/">PHP</Link>
+                  <Link to="/">WORDPRESS</Link>
+                  <Link to="/">NODEJS</Link>
+                </div>
+              </div>
+
+              <div className="popular-part part-bd">
+                <h2>Popular Cours</h2>
+                <div className="popular-cours-list">
+                  <div className="popular-item">
+                    <div className="image">
+                      <img src="/images/students/student_class5.jpg" />
+                    </div>
+                    <div className="textes">
+                      <div className="title">
+                        <h3>Digital Marketing Course</h3>
+                      </div>
+                      <div className="price">
+                        <span>$19.99</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="popular-item">
+                    <div className="image">
+                      <img src="/images/students/student_class4.jpg" />
+                    </div>
+                    <div className="textes">
+                      <div className="title">
+                        <h3>Php & mySql Adv Programming</h3>
+                      </div>
+                      <div className="price">
+                        <span>$19.99</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="popular-item">
+                    <div className="image">
+                      <img src="/images/students/student_class3.jpg" />
+                    </div>
+                    <div className="textes">
+                      <div className="title">
+                        <h3>Beckend Dev With Wordpress</h3>
+                      </div>
+                      <div className="price">
+                        <span>$19.99</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="popular-item">
+                    <div className="image">
+                      <img src="/images/students/student_class1.jpg" />
+                    </div>
+                    <div className="textes">
+                      <div className="title">
+                        <h3>React native Programming</h3>
+                      </div>
+                      <div className="price">
+                        <span>$19.99</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="popular-item">
+                    <div className="image">
+                      <img src="/images/students/student_class2.jpg" />
+                    </div>
+                    <div className="textes">
+                      <div className="title">
+                        <h3>React + Laravel Programming</h3>
+                      </div>
+                      <div className="price">
+                        <span>$19.99</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

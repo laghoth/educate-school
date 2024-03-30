@@ -111,7 +111,7 @@ function Header() {
                     <Link to="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <Link to="/">Coming Soon</Link>
+                    <Link to="/coming-son">Coming Soon</Link>
                   </li>
                   <li>
                     <Link to="/404">404</Link>

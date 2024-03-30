@@ -19,6 +19,7 @@
 @import "./views/gallery.scss";
 @import "./views/faqs.scss";
 @import "./views/cours.scss";
+@import "./views/coming.scss";
 .main-btn {
   @include button(
     var(--main-color-blue-1),
