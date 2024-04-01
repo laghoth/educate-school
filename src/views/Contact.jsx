@@ -20,7 +20,6 @@ function Contact() {
             <div className="desc-section">
               <h2>Get in Touch</h2>
             </div>
-            <h3></h3>
             <p>
               Suspendisse ultrice gravida dictum fusce placerat ultricies
               integer

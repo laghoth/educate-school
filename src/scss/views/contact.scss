@@ -14,20 +14,22 @@
     }
     .container {
       position: relative;
-      padding: 100px;
+      padding: 90px;
       background-color: var(--main-color-blue-5);
       display: grid;
       grid-template-columns: 52% 44%;
       justify-content: space-between;
-      gap: 40px;
+      gap: 20px;
       overflow: hidden;
       font-family: var(--font-family-nav);
+      @include forScreenSize(xl) {
+        padding: 50px;
+      }
       @include forScreenSize(lg) {
-        grid-template-columns: 98%;
-        padding: 80px;
+        grid-template-columns: 100%;
       }
       @include forScreenSize(md) {
-        padding: 50px;
+        padding: 25px;
       }
       @include forScreenSize(sm) {
         padding: 25px;
@@ -71,14 +73,27 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        h3 {
-          font-size: 40px;
+        @include forScreenSize(md) {
+          padding: 20px;
         }
+
         p {
           font-size: 20px;
+          @include forScreenSize(lg) {
+            padding-top: 20px;
+          }
         }
         ul {
           list-style: none;
+          @include forScreenSize(md) {
+            li {
+              border-bottom: 0.5px solid var(--main-color-green-1);
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+
           li,
           a {
             display: flex;
@@ -86,6 +101,13 @@
             gap: 30px;
             padding: 20px 0;
             text-decoration: none;
+            @include forScreenSize(md) {
+              flex-direction: column;
+              padding: 10px 0;
+              align-items: center;
+              text-align: center;
+              gap: 10px;
+            }
             svg {
               font-size: 20px;
               color: var(--main-color-green-1);
@@ -103,7 +125,7 @@
               }
               .desc {
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 18px;
                 color: var(--main-black);
               }
             }
