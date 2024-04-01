@@ -68,14 +68,14 @@
         padding: 40px;
         z-index: 1;
         border-radius: 10px;
+        @include forScreenSize(md) {
+          padding: 20px;
+        }
       }
       .contact-informations {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        @include forScreenSize(md) {
-          padding: 20px;
-        }
 
         p {
           font-size: 20px;
