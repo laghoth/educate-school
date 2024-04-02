@@ -91,44 +91,48 @@
 
   .part3 {
     grid-area: part3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
     font-family: var(--font-family-text3);
-    gap: 20px;
-    h3 {
-      color: var(--main-color-blue-2);
-    }
-    p {
-      color: var(--main-color-gray);
-    }
-    ul {
+    .part3-content {
+      padding: 20px 0;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      list-style: none;
-      li {
+      gap: 20px;
+      h3 {
+        color: var(--main-color-blue-2);
+      }
+      p {
+        color: var(--main-color-gray);
+      }
+      ul {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: var(--main-color-blue-1);
-        letter-spacing: 1px;
-        .color-nbr {
-          background-color: var(--main-color-green-1);
-          width: 100px;
-          height: 60px;
-          display: grid;
-          justify-content: center;
+        justify-content: space-between;
+        list-style: none;
+        li {
+          display: flex;
+          flex-direction: column;
           align-items: center;
-          border-radius: 40%;
-          color: var(--main-white);
-          font-family: "Rubik Doodle Shadow";
-          font-size: 30px;
-          font-weight: 900;
+          color: var(--main-color-blue-1);
+          letter-spacing: 1px;
+          .color-nbr {
+            background-color: var(--main-color-green-1);
+            width: 100px;
+            height: 60px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40%;
+            color: var(--main-white);
+            font-family: "Rubik Doodle Shadow";
+            font-size: 30px;
+            font-weight: 900;
+          }
         }
       }
-    }
-    .main-btn {
-      width: fit-content;
+      .main-btn {
+        width: fit-content;
+      }
     }
   }
 

@@ -135,7 +135,6 @@
             padding: 20px 0 0;
             @include forScreenSize(md) {
               grid-template-columns: 20% 80%;
-              border: solid red 2px;
             }
             .image {
               img {
@@ -240,6 +239,7 @@
             }
             ul {
               li {
+                flex-direction: row;
                 color: var(--main-color-green-1);
               }
             }

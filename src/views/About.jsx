@@ -19,46 +19,48 @@ function About() {
         </div>
 
         <div className="part3">
-          <div className="title-section bg-wt">
+          <div className="title-section">
             <span>about us</span>
           </div>
+
           <div className="desc-section">
             <h2>Learn & Grow Your Skills From Anywhere</h2>
           </div>
-          <h3>
-            We Have Experienced Professionals & We Do Our Best To Achieve Your
-            Goal. Your Happiness Is Our First Priority.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-            obcaecati. Nobis natus corrupti cumque autem!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-            non voluptatum placeat ea id doloremque possimus tenetur sint
-            dolorem eaque accusantium corrupti necessitatibus ipsa quae
-            pariatur, ex ipsam veniam vitae.
-          </p>
 
-          <ul>
-            <li>
-              <span className="color-nbr">700+</span>
-              <span className="text">Happy Students</span>
-            </li>
-            <li>
-              <span className="color-nbr">30+</span>
-              <span className="text">Teachers</span>
-            </li>
-            <li>
-              <span className="color-nbr">120+</span>
-              <span className="text">Courses</span>
-            </li>
-          </ul>
-
-          <button className="main-btn">
-            Admission Open
-            <FaArrowRightLong />
-          </button>
+          <div className="part3-content">
+            <h3>
+              We Have Experienced Professionals & We Do Our Best To Achieve Your
+              Goal. Your Happiness Is Our First Priority.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+              obcaecati. Nobis natus corrupti cumque autem!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, non voluptatum placeat ea id doloremque possimus
+              tenetur sint dolorem eaque accusantium corrupti necessitatibus
+              ipsa quae pariatur, ex ipsam veniam vitae.
+            </p>
+            <ul>
+              <li>
+                <span className="color-nbr">700+</span>
+                <span className="text">Happy Students</span>
+              </li>
+              <li>
+                <span className="color-nbr">30+</span>
+                <span className="text">Teachers</span>
+              </li>
+              <li>
+                <span className="color-nbr">120+</span>
+                <span className="text">Courses</span>
+              </li>
+            </ul>
+            <button className="main-btn">
+              Admission Open
+              <FaArrowRightLong />
+            </button>
+          </div>
         </div>
 
         <div className="part4">
