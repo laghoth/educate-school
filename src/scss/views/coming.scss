@@ -1,5 +1,5 @@
 .coming-son {
-  height: 100vh;
+  height: 86vh;
   background-image: url(../../../public/images/coming.jpg);
   background-size: cover;
   background-position: center;
@@ -11,35 +11,52 @@
     background-color: #f0f9fedb;
   }
   .contents {
-    z-index: 2;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 30px;
-
+    .logo {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
     .title {
       h1 {
         font-size: 52px;
         color: var(--main-color-green-1);
         font-weight: 900;
         font-family: var(--font-family-nav);
+        text-align: center;
+        @include forScreenSize(md) {
+          font-size: 40px;
+        }
       }
     }
     .countdown-timer {
       ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
         li {
           background-color: var(--main-color-blue-1);
-          width: 100px;
-          height: 100px;
+          padding: 10px;
+          width: 80px;
+          height: 80px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           gap: 10px;
           border-radius: 10px;
+          @include forScreenSize(md) {
+            width: 70px;
+            height: 70px;
+          }
           .nbr {
             font-size: 48px;
             color: var(--main-color-green-1);
@@ -48,6 +65,9 @@
             letter-spacing: 0px;
             margin-top: -12px;
             margin-bottom: -10px;
+            @include forScreenSize(md) {
+              font-size: 40px;
+            }
           }
           .txt {
             color: var(--main-color-green-5);
@@ -67,6 +87,7 @@
         text-align: center;
       }
       .news-form {
+        // width: 90%;
         form {
           padding: 5px;
           background-color: transparent;

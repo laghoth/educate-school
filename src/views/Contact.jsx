@@ -99,7 +99,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="news-lettre">
+      <div className="news-lettre newsletter-bg-blue-5">
         <div className="news-texte">
           <h3>Join Our Newsletter</h3>
           <p>Subscribe our newsletter to get our latest update & news.</p>

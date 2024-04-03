@@ -122,6 +122,28 @@
   }
 }
 
+.newsletter-bg-blue-5 {
+  background-color: var(--main-color-blue-5);
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--main-color-blue-4);
+    border: 10px solid var(--main-color-green-4);
+  }
+  &::before {
+    height: 100%;
+    left: -50px;
+  }
+  &::after {
+    height: 100px;
+    right: -80px;
+  }
+}
+
 .section-bg-opacity {
   background-color: hsla(201, 64%, 24%, 0.5);
   position: absolute;

@@ -256,7 +256,7 @@ header {
         display: block;
       }
       .active {
-        display: flex;
+        display: none /*flex*/;
         transform: translate(0, 100%);
         opacity: 1;
       }

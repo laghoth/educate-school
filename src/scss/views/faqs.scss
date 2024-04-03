@@ -6,18 +6,11 @@
       padding-left: 250px;
       padding-right: 250px;
     }
-
-    @include forScreenSize(lg) {
-      border: solid red;
-    }
-
     @include forScreenSize(md) {
-      border: solid rgb(200, 0, 255);
       padding: var(--md-padding);
     }
 
     @include forScreenSize(sm) {
-      border: solid rgb(0, 255, 89);
       padding: var(--sm-padding);
     }
 
@@ -60,7 +53,7 @@
       margin-bottom: 40px;
       .panel-content {
         display: grid;
-        grid-template-columns: 70% 20%;
+        grid-template-columns: 80% 20%;
         justify-content: space-around;
         align-items: center;
         @include forScreenSize(xl) {
@@ -70,7 +63,6 @@
           font-size: 20px;
           color: var(--main-color-gray-2);
           padding: 10px;
-          text-align: justify;
         }
         img {
           width: 80%;
