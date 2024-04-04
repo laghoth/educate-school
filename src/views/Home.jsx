@@ -275,7 +275,7 @@ function Home() {
               </ul>
               <div className="main-border-dotted"></div>
               <div className="course-teacher">
-                <img src="/Images/students/student2.jpg" />
+                <img src="/images/students/student2.jpg" />
                 <h4>
                   By <span>Othmane</span> in <span>Development</span>
                 </h4>
@@ -343,7 +343,7 @@ function Home() {
               </ul>
               <div className="main-border-dotted"></div>
               <div className="course-teacher">
-                <img src="/Images/students/student2.jpg" />
+                <img src="/images/students/student2.jpg" />
                 <h4>
                   By <span>Othmane</span> in <span>Development</span>
                 </h4>
@@ -412,7 +412,7 @@ function Home() {
               </ul>
               <div className="main-border-dotted"></div>
               <div className="course-teacher">
-                <img src="/Images/students/student2.jpg" />
+                <img src="/images/students/student2.jpg" />
                 <h4>
                   By <span>Othmane</span> in <span>Development</span>
                 </h4>
