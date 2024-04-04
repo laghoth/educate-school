@@ -669,7 +669,10 @@
       grid-template-columns: 48% 48%;
     }
     @include forScreenSize(md) {
-      grid-template-columns: 98%;
+      grid-template-columns: 50% 50%;
+    }
+    @include forScreenSize(sm) {
+      grid-template-columns: 100%;
     }
     .constructor-item {
       position: relative;
