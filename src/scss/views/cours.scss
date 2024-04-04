@@ -87,8 +87,8 @@
                   margin-right: 6px;
                   position: relative;
                   &:checked {
-                    background: url(../../images/check_mark.png) 1px 2px
-                      no-repeat var(--main-color-green-2);
+                    background: url(../../../public/images/check_mark.png) 1px
+                      2px no-repeat var(--main-color-green-2);
                     color: white;
                   }
                 }

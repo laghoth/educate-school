@@ -17,7 +17,6 @@ import {
 } from "react-icons/fa6";
 
 import { AiFillCaretDown } from "react-icons/ai";
-import Logo from "../images/logo.png";
 
 function Header() {
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -79,7 +78,7 @@ function Header() {
         <div className={"logo-area " + `${showNavbar && "add-over"}`}>
           <div className="logo">
             <Link to="/">
-              <img src={Logo} />
+              <img src="" />
             </Link>
           </div>
 

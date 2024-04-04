@@ -368,7 +368,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  background-image: url(../../images/bg-call.jpg);
+  background-image: url(../../../public/images/bg-call.jpg);
+
   background-size: cover;
   background-position: center;
   min-height: 50vh;
@@ -824,7 +825,7 @@
     padding-right: 250px;
   }
   .funfact-bg {
-    background-image: url(../../images/bg-funfact.jpg);
+    background-image: url("../../../public/images/bg-funfact.jpg");
     background-size: cover;
     background-position: center;
     position: relative;

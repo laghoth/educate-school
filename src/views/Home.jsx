@@ -432,7 +432,7 @@ function Home() {
 
         <div className="more-courses">
           <button className="main-btn">
-            Our Courses
+            <Link to="/cours"> Our Courses</Link>
             <FaArrowRightLong />
           </button>
         </div>
