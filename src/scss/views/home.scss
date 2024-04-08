@@ -189,7 +189,6 @@
     flex-direction: column;
     gap: 20px;
     text-align: justify;
-
     h3 {
       font-weight: 700;
     }
@@ -354,7 +353,6 @@
   }
   @include forScreenSize(sm) {
     padding: $sm-margin;
-
     .categories-content {
       grid-template-columns: 100%;
     }
@@ -369,7 +367,6 @@
   justify-content: center;
   position: relative;
   background-image: url(../../../public/images/bg-call.jpg);
-
   background-size: cover;
   background-position: center;
   min-height: 50vh;
@@ -676,7 +673,6 @@
     }
     .constructor-item {
       position: relative;
-      // border: 3px solid #164863;
       border-radius: 10px;
       transition: all 10s ease;
       &:hover .constructor-image img {
@@ -786,7 +782,6 @@
         border-radius: 10px;
         transition: all 1s ease;
         z-index: 2;
-
         &:hover {
           background-color: var(--main-color-blue-1);
           color: var(--main-white);
@@ -797,7 +792,6 @@
           justify-content: center;
           align-items: center;
           text-decoration: none;
-
           svg {
             z-index: 1;
             font-size: 32px;
@@ -859,7 +853,6 @@
           flex-direction: column;
           justify-content: start;
           color: var(--main-white);
-
           transition: all 0.5s ease;
           h3 {
             font-size: 38px;
@@ -977,5 +970,4 @@
     padding: $sm-margin;
   }
 }
-// End news section Styling
-//}
+//  End news section Styling
