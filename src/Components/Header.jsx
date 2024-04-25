@@ -78,7 +78,7 @@ function Header() {
         <div className={"logo-area " + `${showNavbar && "add-over"}`}>
           <div className="logo">
             <Link to="/">
-              <img src="" />
+              <img src="/images/logo.png" />
             </Link>
           </div>
 
